@@ -29,3 +29,24 @@ function oddNumberCount(inputNumber) {
 
 oddNumberCount(9);
 oddNumberCount(32);
+
+// -----------------------------------------------------
+// disemvoweling trolls
+// -----------------------------------------------------
+
+function trollsBeGone(input) {
+  const removal = "aeiouAEIOU";
+  let removalArray = removal.split("");
+  let inputArray = input.split("");
+  for (i = 0; i < removalArray.length; i++) {
+    inputArray = inputArray.filter((out) => out !== removalArray[i]);
+  }
+  const answer = inputArray.join("");
+  console.log(answer);
+}
+
+trollsBeGone("this is an input");
+
+// -----------------------------------------------------
+// bank account summary
+// -----------------------------------------------------
