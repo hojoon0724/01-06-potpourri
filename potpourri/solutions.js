@@ -50,3 +50,31 @@ trollsBeGone("this is an input");
 // -----------------------------------------------------
 // bank account summary
 // -----------------------------------------------------
+
+const bankInfo = {
+  savings: 600,
+  checking: 80,
+  moneyMarket: 20,
+  creditCard: -2000,
+};
+
+function bankAccountSummary(account) {
+  let sumAll = account.savings + account.checking + account.moneyMarket + account.creditCard;
+  return sumAll;
+}
+
+bankAccountSummary(bankInfo);
+
+let bankTotal = bankAccountSummary(bankInfo);
+
+console.log(bankTotal);
+
+function inTheRed() {
+  if (bankTotal < 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(inTheRed());
