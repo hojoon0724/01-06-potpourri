@@ -1,18 +1,5 @@
 console.log("sup world");
 
-// create object "words"
-// keys: number, adjective, pluralNoun, adverb, anotherAdjective
-
-// function: StartMadlib
-// prompt user to enter each word type and save them
-
-// return alert with these phrases with added words prompted
-// Once upon a time a group of _____(number) General Assembly graduates
-// got together and made a startup called _____ (adjective) Technologies.
-// Their goal was to create smart _____(plural noun).
-// They approached the challenge _____ (adverb)
-// which ultimately lead them to _______(another adjective) fame;
-
 const newObject = {
   number: 0,
   adjective: "",
@@ -38,5 +25,4 @@ const assembly = () => {
 };
 
 askWords();
-console.log(newObject);
 assembly();
